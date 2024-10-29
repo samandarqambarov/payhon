@@ -1,0 +1,335 @@
+\section{\subparagraph{%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{hyperref}
+ 
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\title[DIFFERENSIAL TENGLAMALAR]{MAVZU: Yuqori tartibli chiziqli differensial tenglamalar. Vronskian.Yechimlarning Fundamental sistemasi. Berilgan chiziqli erkli funksiyalar,fundamental yechimlar sistemasini tashkil qiladigan differensial tenglamaniqurish..}
+\author[Ahmadaliyev Azizali]{Kanpuyuter injinering At-servis\\Talaba}
+\institute[UTRGV] 
+{
+Toshkent axborot texnologiyalari universiteti Farg'ona filiali \\ 
+\medskip
+\textit{azizaliaxmadaliyev21@gmail.com} 
+}
+\date[Math Project Presentation]{4.05.2024}
+
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Differensial tenglamalar} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\begin{frame}
+\begin{center}
+\color{red}
+  \textbf{KIRISH}
+  \\Chiziqli bir jinsli differensial tenglamalar\\
+\end{center} 
+Agar (2.8) da $f(x)$ $(f(x) = 0)$ aynan nolga teng boʻlsa, tenglama n−tartibli chiziqli bir jinsli differensial tenglama deyiladi va quyidagicha yoziladi.
+\begin{equation}
+\color{red} \dfrac{d^{n}y}{dx^{n}} + a_{1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+...+a_{n} y = 0    
+\end{equation}
+bu yerda $y_{1},y_{2},...,y_{n}$  funksiyalar (2.10) differensial tenglamaning chiziqli erkli xususiy yechimlari boʻladigan boʻlsa u holda quyidagi teorema oʻrinli boʻladi.\\
+\textbf{1-Teorema.}Agar $y_{1},y_{2},...,y_{n}$ funksiyalar (2.10) tenglamaning xususiy chiziqli erkli yechimlari boʻlsa, 
+\begin{equation}
+\color{red} y = C_{1}y_{1} + C_{2}y_{2} +...+ C_{n}y_{n}    
+\end{equation}
+\end{frame}
+
+%---------------------------------
+
+\begin{frame}
+(2.11) tenglik (2.10) ning umumiy yechimi boʻladi. Bu yerda $C_{1},C_{2},...,C_{n}$ ixtiyoriy oʻzgarmas sonlar. \\
+Agar n ta bir vaqtda nolga teng $\alpha_{1},\alpha_{2},...,\alpha_{n}$  sonlar mavjud va $[a,b]$ kesmada barcha x lar uchun
+\begin{equation}
+\color{red} \alpha_{1}y_{1} + \alpha{2}y_{2} +...+ \alpha_{n}y_{n} = 0    
+\end{equation}
+munosabat bajarilsa,$y_{1},y_{2},...,y_{n}$ funksiyalar sistemasi $[a,b]$  kesmada chiziqli bogʻliq deyiladi.\\
+Aks holda $[a,b]$ kesmada
+\begin{equation}
+\color{red} \alpha_{1}y_{1} + \alpha{2}y_{2} +...+ \alpha_{n}y_{n} = 0 
+\end{equation}
+(2.13) tenglik $\alpha_{1} = \alpha_{2} = \alpha_{3} =...= \alpha_{n} = 0$ da bajarilgan boʻlsa, $y_{1},y_{2},...,y_{n}$ funksiyalar sistemasi chiziqli erli deyiladi. 
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+Ikkinchi tartibli differensial tenglama uchun$ \alpha_{1}y_{1} + \alpha_{2}y_{2} = 0$ (2.13) ifoda$ \dfrac{y_{1}}{y_{2}} =- \dfrac{\alpha_{1}}{\alpha_{2}} = const$ shartga mos keladi. Ikkita funksiya oʻzgarmas songa teng boʻlmasa, ular chiziqli erkli boʻladi.
+\textbf{3.2-Misol.} a) $y_{1} = x^{3} , y_{2} = x^{4}$  funksiyalar $\dfrac{y_{1}}{y_{2}} = \dfrac{x^{3}}{x_{4}} = \dfrac{1}{x} = C$ teng boʻlmaganligi uchun chiziqli erkli hisoblanadi.\\
+b) y_{1} = 5e^{x} , y_{2} = 6e^{x} funksiyalar $\dfrac{y_{1}}{y_{2}} = \dfrac{5e^{x}}{6e_{x}} = \dfrac{5}{6}$ boʻlganligi uchun chiziqli bogʻliq hisoblanadi.\\
+Agar $y_{1},y_{2},...,y_{n}$ funksiyalar $(n-1)$  − marta differensiallanuvchi boʻlsalar, u holda ulardan tuzilgan \textbf{Vronskiydeterminant^{1}} quyidagicha boʻladi.
+\end{frame}
+
+%---------------------------------
+\begin{frame}
+(2.14) ni Vronskiy determinant yoki vronskian deyiladi. Vronskiy determinant 
+funksiyalar sistemasining chiziqli erkliligi yoki chiziqli bogʻliqligini aniqlash uchun 
+qoʻllaniladi. Uning qoʻllanishi haqidagi quyidagi teoremalarni keltirib oʻtamiz. \\
+\textbf{2-Teorema.} Agar $y_{1},y_{2},...,y_{n}$ funksiyalar sistemasining vronskiani aynan nolga teng boʻlsa, u holda funksiyalar chiziqli bogʻliq boʻladi.\\
+\textbf{3-Teorema.} Agar $y_{1},y_{2},...,y_{n}$  funksiyalar chiziqli erkli boʻlib, ular birorta n− tartibli chiziqli bir jinsli tenglamani qanoatlantiradigan boʻlsa, bunday sistemaning vronskiani hech qaysi nuqtada nolga teng boʻlmaydi.\\
+Agar $y_{1},y_{2},...,y_{n}$ funksiyalar (2.10) ning xususiy yechimlari boʻlsa, Vronskiyning noldan farqli boʻlishi zarur va yetarlidir.n−tartibli chiziqli bir jinsli tenglamaning $y_{1},y_{2},...,y_{n}$ xususiy yechimlar 
+sistemasi n ta chiziqli erkli funksiyalardan iborat boʻladigan boʻlsa, bunday 
+\end{frame}
+
+%---------------------------------
+\begin{frame}
+\textbf{1-Teorema.} Agar $y'=f(x,y)$ tenglamada $f(x,y)$ funksiya va undan $y$ bo’yicha olingan $\dfrac{df}{dy}$ xususiy hosila $xOy$ tekislikdadi $(x_0, y_0)$ nuqtani o’z ichiga oluvchi biror sohada uzluksiz funksiyalar bo’lsa, u holda berilgan tenglamaning $x=x_0$ bo’lganda $y=y_0$ shartni qanoatlantiruvchi birgina $y=\varphi(x)$ yechimi mavjuddir.\\
+\quad Teorema geometrik jihatdan grafigi $(x_0, y_0)$ nuqtadan o’tuvchi birgina  $y=\varphi(x)$ funksiyaning mavjudligini ifodalaydi. Teoremadan (2) tenglama cheksiz ko’p turli yechimlarga ega ekanligi kelib chiqadi.\\
+$x=x_0$  bo’lganda  $y$ funsiya berilgan $y_0$ songa teng bo’lishi kerak, degan shart boshlang’ich shart deyiladi. Bu shart asosan 
+\begin{equation}
+\color{red} y|_x_=_x_0=y_0
+\end{equation}
+ko’rinishida yoziladi. \\
+\quad \textbf{1.1-ta’rif.} (1) yoki (2) tenglamaning biror bir $I={x\in (a,b)}$ intervaldagi yechimi deb, shu intervaldagi uzluksiz 
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+sistemani fundamental sistema deyiladi. Bunday tenglamaning umumiy yechimi 
+(2.11) koʻrinishida boʻladi.(2.10) tenglamaning Vronskiysi (2.14) $a_{1}(x)$ koeffitsiyenti bilan $(a,b)$ oraliqning $x_{0}$ nuqtasida
+\begin{equation}
+\color{red} W(y_{1},y_{2},...,y_{n}) = W(y_{1},y_{2},...,y_{n})\arrowvert_{x = x_{0}} * e^\int^{x}_{x_{0}}a_{1}(x)dx
+\end{equation}
+\textbf{Liuvilli-Ostrogradskiy formulasi }yordamida ifodalanadi. \\
+Xususiy holda ikkinchi tartibli chiziqli bir jinsli differensial tenglama quyidagi koʻrinishda berilgan boʻlsin.
+\begin{equation}
+\color{red} \dfrac{d^{2}y}{dx^{2}} + a_{1}(x)\dfrac{dy}{dx} + a_{2}(x)y =0 (y" + a_{1}(x)y' + a_{2}(x)y = 0)    
+\end{equation}
+Uning fundamental sistemasi $y_{1}(x)$ va $y_{2}(x)$ funksiyalardan iborat boʻlsa, (2.16) ning umumiy yechimi
+\end{frame}
+
+%------------------------------------------------
+\section{Azizali}
+%------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Bernhard Riemann}
+%\textit{"The rules for finite sums only apply to the series of the first  class [absolutely convergent series]. Only these can be considered as the aggregates of their terms; the series of the second class [conditionally convergent series] cannot. This circumstance was overlooked by mathematicians of the previous century, most likely, mainly on the grounds that the series which progress by increasing power of a variable generally (that is, excluding individual values of this variable) belong to the first class." -Bernhard Riemann (1826-1866)}
+%be careful when rearranging series (rules)%
+%\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\begin{equation}
+\color{red} y = C_{1}y_{x}(x) + C_{2}y_{2}(x) 
+\end{equation}
+koʻrinishda boʻladi.\\
+Agar ikkinchi tartibli chiziqli bir jinsli differensial tenglamada $y_{1}(x)$ yechim mavjud boʻlsa, tenglama tartibini pasaytirmagan holda tenglamaning ikkinchi chiziqli erkli $y_{2}(x)$ yechimini \textbf{Liuvilli-Ostrogradskiy formulasi} yordamida topib olishimiz mumkin boʻladi. Uning koʻrinishi quyidagicha boʻladi.
+\begin{equation}
+\color{red} y_{2}(x) = y_{1}(x)\int\dfrac{e-\int a_{1}(x)dx}{y^{2}_{1}(x)}dx
+\end{equation}
+Ikkinchi chiziqli erkli yechimni topib olgandan soʻng (2.17) ga qoʻyilsa, 
+tenglamaning umumiy yechimi kelib chiqadi. 
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\begin{equation}
+\color{red} y = C_{2}y_{1}\int\dfrac{1}{y^{2}_{1}}e-\int{p_{1}(x)dx}dx + C_{1}y_{1}
+\end{equation}
+\textbf{3.3-Misol.} $(1 - x_{2})y" - 2xy' + 2y = 0$ tenglamaning $y_{1} = x$  xususiy yechimini bilgan holda uning umumiy yechimini toping.
+\textbf{Yechish.} Tenglikni ikki tomonini $(1 - x_{2})$ ga boʻlib yuboramiz va quyidagicha yozib olamiz.
+\begin{equation}
+\color{red} y" - \dfrac{2x}{1 -x^{2}}y' + \dfrac{2y}{1 -x_{2}} = 0
+\end{equation}
+Bu yerda $a_{1}(x) = -\dfrac{2x}{1 - x^{2}}$ ekanligini inobatga olib, umumiy yechim uchun formulani yozamiz.  
+\end{frame}
+
+%-------------------------------------------
+\begin{frame}
+\begin{equation}
+\color{red} y = C_{2}x\int\dfrac{1}{x^{2}}e\int\dfrac{2x}{1-x^{2}dx}dx + C_{1}x; 
+\end{equation}
+integralni hisoblaymiz.\\ 
+\textbf{3.4-Misol.} $y_{1} = e^{-2x} va y_{2} = e^{x}$ funksiyalar $y" + y' - 2y = 0$tenglamaning xususiy yechimlari boʻlsa, uning umumiy yechimini toping.\\
+\textbf{Yechish.}Avvalo xususiy yechimlarni chiziqli erkli yoki chiziqli bogʻliq ekanligini tekshirib olamiz. Buning uchun ularni boʻlinmasini hisoblaymiz. $\dfrac{y_{1}}{y_{2}} = \dfrac{e^{-2x}}{e^{x}} = e^{-3x} = C$  demak oʻzgarmas songa teng emas shuning uchun ham chiziqli erkli boʻladi. Chiziqli erkli boʻlsa ular fundamental sitema tashkil etadi. $y = C_{1}y_{1}(x) + C_{2}y_{2}(x)$ umumiy yechim formilasidan foydalanamiz. 
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\begin{equation}
+\color{red}   y = C_{1}e^{-2x} + C_{2}e^{x}   
+\end{equation}
+\textbf{TEOREMA:} Agar koeffitsientlari uzluksiz bo’lgan $L[y] = 0$ $y = u(x) + iv(x)$ yechimga  ega bo’lsa , u holda  shu yechimni haqiqiy qismi $u(x)$ vamavxum qismi $v(x) $ funksiyalar  ham tenglamaning yechimi bo’ladi.\\
+Shu teoremaga ko’ra\\
+$e^{\alpha x}cos\beta x$ va  $e^{\alpha x}sin\beta x$ funksiyalar tenglamaning yechimlari bo’ladi.\\
+\textbf{MISOL:} $y" + 4y' + 5y = 0$  tenglama uchun (3) tenglama quyidagicha  bo’ladi.
+\begin{equation}
+\color{red}  \lambda^{2} + 4\lambda + 5 = 0   
+\end{equation}
+Buning yechimlari\\
+$\lambda_{1} = -2 + i$ , $\lambda_{2} = -2-i$, u holda umumiy yechim\\
+$y = e^{-2x}(c_{1}cosx + c_{2}sonx)$\\
+ko’rinishga ega.
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+\quad (4) tenglamani yechish uchun unda o’zgaruvchilarni ajratish kerak. Buning uchun (4) da $y'$ ning o’rniga $\dfrac{dy}{dx}$ ni yozib, tenglamani ikki tomonini $f_2(y)\neq\ 0$ ga bo’lamiz va $dx$ ga ko’paytiramiz.\\
+U holda (4) tenglama\\
+\begin{equation}
+\color{red}    \dfrac{dy}{f_2(y)}=f_1(x)dx
+\end{equation}
+ko’rinishga keladi. Bu tenglamada $x$ o’zgaruvchi o’ng tomonda $y$ o’zgaruvchisi esa chap tomonda ishtirok etyapti, ya’ni o’zgaruvchilar ajraldi. (1.5) ni integrallab,\\
+\begin{center}
+\color{red}    $\int\dfrac{dy}{f_2(y)}=\int f_1(x)dx+C$
+\end{center}
+ekanligini ko’rishimiz mumkin, bu yerda $C$ - ixtiyoriy o’zgarmas son.
+\end{frame}
+%---------------------------------
+\begin{frame}
+4-hol:  (3) ning ildizlari  kompleks va karrali bo’lsin. \\
+Agar (3)ning ildizlari $\alpha + i\beta$ ko’rinishida bo’lsa, unga qo’shma $\alpha + i\beta$  ildizga ham ega. SHuning uchun $\alpha + i\beta$ karrali bo’lsa $\alpha + i\beta$  ildiz  ham  k_{j} -  karrali bo’ladi, ya’ni  ko’rinishida ifodalanadi.  
+\end{frame}
+
+%------------------------------------------------
+% \begin{frame}
+% \begin{center}
+%     \textbf{1-AMALIY MASHG'ULOT. Differensial tenglamalar faniga kirish. O'zgaruvchilari ajralgan va ajraladigan differensial tenglamalar.}\\
+% \end{center}
+% \quad \textbf{Quyidagi tenglamalarni yeching.}\\
+%  1. $3x(2+y^2 )dx-2y(x^2+3)dy=0$\quad \quad 2. $(1+y^2 )dx=xydy$\\
+%  3. $(1+y)dx-(1-x)dy=0$ \quad \quad  \quad \quad \quad  4. $(1+e^x )yy'=e^x$\\
+%  5. $x\sqrt{1+y^2}+yy'\sqrt{1+x^2}=0$\quad \quad \quad  6. $y'=tgx⋅ctgy$\\
+%  7. $(\sqrt{xy}-\sqrt{x})dy+ydx=0$\quad  \quad    8. $(x+2xy)dx+(4+x^2 )dy=0$\\
+%  9. $y'+\sqrt{\dfrac{1-y^2}{1-x^2}}=0$\quad  \quad \quad  10. $(1+x^2)y'+1+y^2=0$\\
+%  \quad \textbf{Quyidagi ayniyatni isbotlang.}\\
+% 1. $x^2 y^2=x^4+2Сx^2+1; \quad yy'=x-x^(-3)$\\
+% 2. $y=C\sqrt{x^2-1}+2x; \quad (1-x^2)y'+xy=2$\\
+% 3. $y=2Cx^3+x;\quad x=(3y-2x)x'$\\
+% 4. $y^2 (Сe^(x^2 )+1)=1;\quad dy=(xy-xy^3)dx$\\
+% 5. $y^2-Cx^2=1;\quad xyy'+1=y^2$\\
+
+% \end{frame}
+
+
+%------------------------------------------------
+% \begin{frame}
+% \quad \textbf{Boshlang'ich shartni qanoatlantiruvchi yechimni toping (Koshi masalasi).}\\
+% 1. $y'ctgx+y=2, \quad \quad \quad \quad y(π)=1$ \\
+% 2. $(x+3)y'=y, \quad \quad \quad \quad y(0)=0$\\
+% 3. $2xy'+y^2=1,\quad \quad \quad \quad y(1)=1/3$\\
+% 4. $xy'+y=y^2,\quad \quad \quad \quad \quad y(2)=3$\\
+% 5. $y/(y')=ln⁡y, \quad \quad \quad \quad \quad y(2)=1$\\
+% 6. $y'=x^2+2x+3, \quad \quad \quad \quad y(0)=1$\\
+% 7. $(1+e^2x)y^2 dy=e^x dx, \quad \quad y"(0)=0$\\
+% 8. $dx/(x(y-1))+dy/(y(x+2))=0, \quad \quad y"(1)=1$\\
+% 9. $x\sqrt{1-y^2} dx+y\sqrt{1-x^2} dy=0, \quad \quad y|_x_=_-_1=0$ 
+
+% \end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{ETIBORINGIZ UCHUN RAHMAT}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+%\frametitle{Verbatim}
+%\begin{example}[Theorem Slide Code]
+%\begin{verbatim}
+%\begin{frame}
+%\frametitle{Theorem}
+%\begin{theorem}[Mass--energy equivalence]
+%$E = mc^2$
+%\end{theorem}
+%\end{frame}\end{verbatim}
+%\end{example}% 
+
+\end{document}
+
+}
+}
+
